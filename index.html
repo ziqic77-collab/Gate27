@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GATE 27 — The Solo Sisterhood | Designed for Her Freedom, Not Her Fear</title>
+  
+  <!-- Meta & Open Graph -->
+  <meta name="description" content="A connected travel experience designed for women who go solo. Combining thoughtful travel design, discreet safety technology (Tulihood), and a global sisterhood." />
+  <meta property="og:title" content="GATE 27 — The Solo Sisterhood" />
+  <meta property="og:description" content="Safety should expand women's freedom, not restrict it. Explore independently. Stay connected when it matters." />
+  <meta property="og:type" content="website" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-primary: #FAF8F5;
+      --bg-surface: #FFFFFF;
+      --bg-secondary: #F4EFEA;
+      --bg-tertiary: #EBE5DC;
+      --bg-dark: #191716;
+      --bg-dark-surface: #24201E;
+      
+      --text-main: #1C1917;
+      --text-muted: #615A53;
+      --text-light: #948B82;
+      --text-on-dark: #FAF8F5;
+      --text-on-dark-muted: #BDB5AC;
+      
+      --accent-terracotta: #C4623F;
+      --accent-terracotta-hover: #B05332;
+      --accent-terracotta-soft: #E89274;
+      --accent-terracotta-light: #FAECE7;
+      --accent-sand: #D9CFC4;
+      --accent-warm-gold: #B89047;
+      --accent-gold-soft: #F0DFC0;
+      --accent-sage: #5A7562;
+      --accent-sage-light: #EBF2ED;
+      
+      --border-light: rgba(28, 25, 23, 0.08);
+      --border-medium: rgba(28, 25, 23, 0.15);
+      --border-dark: rgba(250, 248, 245, 0.12);
+      
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'Space Grotesk', monospace;
+      
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.03);
+      --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-serif {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+
+    .eyebrow {
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent-terracotta);
+      margin-bottom: 0.85rem;
+      display: inline-block;
+    }
+
+    .eyebrow-dark {
+      color: var(--accent-terracotta-soft);
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    section {
+      padding: 6.5rem 0;
+      position: relative;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.85rem;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      border-radius: var(--radius-full);
+      transition: var(--transition);
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-terracotta);
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(196, 98, 63, 0.25);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-terracotta-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(196, 98, 63, 0.35);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--text-main);
+      border-color: var(--border-medium);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--text-main);
+      background-color: rgba(28, 25, 23, 0.04);
+      transform: translateY(-2px);
+    }
+
+    .btn-light-secondary {
+      background-color: transparent;
+      color: var(--text-on-dark);
+      border-color: var(--border-dark);
+    }
+
+    .btn-light-secondary:hover {
+      border-color: var(--text-on-dark);
+      background-color: rgba(255, 255, 255, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 0.55rem 1.35rem;
+      font-size: 0.82rem;
+    }
+
+    .stage-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      background: var(--accent-terracotta-light);
+      border: 1px solid rgba(196, 98, 63, 0.25);
+      border-radius: var(--radius-full);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-terracotta);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .stage-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--accent-terracotta);
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulseDot 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+    }
+
+    header.site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(250, 248, 245, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .brand-logo-wrap {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      line-height: 1;
+    }
+
+    .brand-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      color: var(--text-light);
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.25rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover {
+      color: var(--accent-terracotta);
+    }
+
+    /* Hero */
+    .hero-section {
+      min-height: 94vh;
+      display: flex;
+      align-items: center;
+      padding-top: 140px;
+      padding-bottom: 5.5rem;
+      background: radial-gradient(circle at 85% 15%, rgba(232, 146, 116, 0.12) 0%, rgba(250, 248, 245, 0) 55%),
+                  radial-gradient(circle at 12% 85%, rgba(217, 207, 196, 0.35) 0%, rgba(250, 248, 245, 0) 65%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 4.5rem;
+      align-items: center;
+    }
+
+    .hero-brand-mark {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      letter-spacing: 0.25em;
+      color: var(--text-light);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-size: clamp(2.8rem, 5.2vw, 4.4rem);
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.08;
+      margin-bottom: 1.35rem;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      font-family: var(--font-serif);
+      font-weight: 400;
+      color: var(--accent-terracotta);
+    }
+
+    .hero-description {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 2.25rem;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-credo-banner {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-light);
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--text-main);
+    }
+
+    .hero-credo-banner::before {
+      content: "✦";
+      color: var(--accent-warm-gold);
+      font-style: normal;
+      font-size: 1rem;
+    }
+
+    .hero-visual-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-card);
+    }
+
+    .hero-image-box {
+      width: 100%;
+      height: 480px;
+      border-radius: calc(var(--radius-lg) - 6px);
+      background: linear-gradient(150deg, #3A3532 0%, #1F1C1B 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2.25rem;
+      position: relative;
+      overflow: hidden;
+      color: #FFFFFF;
+    }
+
+    .hero-badge-tag {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(10px);
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-image-quote {
+      position: relative;
+      z-index: 2;
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      line-height: 1.35;
+      font-style: italic;
+      color: #FFFFFF;
+    }
+
+    /* Problem Section */
+    .problem-section {
+      background-color: var(--bg-surface);
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .invisible-decisions-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin: 1.5rem 0 2.25rem;
+    }
+
+    .decision-item {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 0.9rem 1.25rem;
+      background: var(--bg-primary);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--accent-terracotta-soft);
+      font-size: 0.98rem;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .decision-num {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent-terracotta);
+      font-weight: 600;
+    }
+
+    /* Spectrum */
+    .spectrum-card {
+      background: var(--bg-primary);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .spectrum-bar-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin: 1.5rem 0 2.25rem;
+    }
+
+    .spectrum-step {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.35rem;
+      border-radius: var(--radius-md);
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .spectrum-step:hover {
+      border-color: var(--accent-terracotta-soft);
+      transform: translateX(4px);
+    }
+
+    .spectrum-step.active {
+      background: #FFF9F6;
+      border-color: var(--accent-terracotta);
+      box-shadow: 0 4px 16px rgba(196, 98, 63, 0.12);
+    }
+
+    .spectrum-label {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+    }
+
+    .step-confident { color: var(--accent-sage); }
+    .step-uncertain { color: var(--accent-warm-gold); }
+    .step-uncomfortable { color: var(--accent-terracotta); }
+    .step-threatened { color: #A64426; }
+    .step-emergency { color: #8C2D19; }
+
+    .spectrum-badge-focus {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      background: var(--accent-terracotta);
+      color: #FFFFFF;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .spectrum-quote-box {
+      padding: 1.5rem;
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--accent-terracotta);
+    }
+
+    .spectrum-quote-box p {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-style: italic;
+      color: var(--text-main);
+      line-height: 1.4;
+    }
+
+    /* Tulihood System */
+    .section-header-center {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 4.5rem;
+    }
+
+    .product-duo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 4.5rem;
+    }
+
+    .product-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      padding: 3.25rem;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      padding: 0.35rem 0.8rem;
+      background: var(--bg-secondary);
+      border-radius: var(--radius-full);
+      color: var(--text-muted);
+    }
+
+    .product-card-title {
+      font-size: 2.1rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    .feature-checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      font-size: 0.98rem;
+      color: var(--text-main);
+    }
+
+    .feature-icon {
+      color: var(--accent-terracotta);
+      font-size: 1.05rem;
+      line-height: 1.4;
+    }
+
+    .interaction-flow-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-subtle);
+      text-align: center;
+    }
+
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.75rem;
+      margin-top: 2.75rem;
+    }
+
+    .flow-step-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 1rem;
+      background: var(--bg-primary);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+    }
+
+    .flow-step-num {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent-terracotta);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .flow-step-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    /* Scenarios */
+    .scenarios-section {
+      background-color: var(--bg-secondary);
+    }
+
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .scenario-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      padding: 2.75rem 2.25rem;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .scenario-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .scenario-id {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      color: var(--accent-terracotta);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .scenario-headline {
+      font-size: 1.6rem;
+      margin-bottom: 1.1rem;
+      color: var(--text-main);
+    }
+
+    .scenario-prompt {
+      background: var(--bg-primary);
+      padding: 1.25rem;
+      border-radius: var(--radius-md);
+      font-style: italic;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--text-main);
+      margin-bottom: 1.5rem;
+      border-left: 2px solid var(--accent-sand);
+    }
+
+    .scenario-action-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .scenario-action-list li::before {
+      content: "→ ";
+      color: var(--accent-terracotta);
+      font-weight: 700;
+    }
+
+    .scenarios-philosophy-banner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2rem 3rem;
+      background: var(--bg-surface);
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-light);
+    }
+
+    .scenarios-philosophy-banner p {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-style: italic;
+      color: var(--text-main);
+    }
+
+    /* Comparison Table */
+    .comparison-table-wrap {
+      overflow-x: auto;
+      margin-bottom: 2.5rem;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+    }
+
+    .comparison-table th, 
+    .comparison-table td {
+      padding: 1.35rem 1.65rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .comparison-table th {
+      background: var(--bg-secondary);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .comparison-table tr.highlight-row {
+      background: #FFF9F6;
+    }
+
+    .comparison-table tr.highlight-row td {
+      border-bottom: 2px solid var(--accent-terracotta);
+      font-weight: 500;
+    }
+
+    .tag-good {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-sm);
+      background: var(--accent-sage-light);
+      color: var(--accent-sage);
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .tag-missing {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-sm);
+      background: #FDF2F2;
+      color: #A83838;
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+
+    .tag-gate27 {
+      display: inline-block;
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-sm);
+      background: var(--accent-terracotta);
+      color: #FFFFFF;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* Sisterhood */
+    .sisterhood-section {
+      background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    }
+
+    .sisterhood-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.25rem;
+      margin-top: 3.5rem;
+    }
+
+    .pillar-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    /* Founder */
+    .founder-section {
+      background-color: var(--bg-dark);
+      color: var(--text-on-dark);
+    }
+
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .founder-visual {
+      background: var(--bg-dark-surface);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      border: 1px solid var(--border-dark);
+    }
+
+    .founder-visual-quote {
+      font-family: var(--font-serif);
+      font-size: 2.15rem;
+      font-style: italic;
+      line-height: 1.35;
+      color: var(--accent-gold-soft);
+      margin-bottom: 1.75rem;
+    }
+
+    .founder-story-body p {
+      color: var(--text-on-dark-muted);
+      font-size: 1.08rem;
+      margin-bottom: 1.4rem;
+      line-height: 1.8;
+    }
+
+    .founder-story-body .highlight-text {
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+
+    /* Manifesto */
+    .manifesto-section {
+      background-color: var(--bg-primary);
+      text-align: center;
+      padding: 8.5rem 0;
+    }
+
+    .manifesto-box {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .manifesto-headline {
+      font-size: clamp(2.6rem, 4.5vw, 4rem);
+      margin-bottom: 2rem;
+      color: var(--text-main);
+    }
+
+    .manifesto-body {
+      font-size: 1.25rem;
+      line-height: 1.9;
+      color: var(--text-muted);
+      margin-bottom: 3.5rem;
+    }
+
+    .manifesto-big-statement {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.6vw, 3.1rem);
+      font-style: italic;
+      color: var(--accent-terracotta);
+      line-height: 1.25;
+      padding: 3rem 2.5rem;
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-card);
+    }
+
+    /* Audience */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.75rem;
+      margin-top: 3.5rem;
+    }
+
+    .audience-card {
+      background: var(--bg-primary);
+      border-radius: var(--radius-md);
+      padding: 2.25rem 1.75rem;
+      border: 1px solid var(--border-light);
+      text-align: center;
+    }
+
+    /* Stage */
+    .stage-section {
+      background-color: var(--bg-secondary);
+    }
+
+    .timeline-wrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.75rem;
+      margin-top: 3.5rem;
+    }
+
+    .timeline-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem 1.75rem;
+      border: 1px solid var(--border-light);
+    }
+
+    .timeline-month {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      color: var(--accent-terracotta);
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    /* Ecosystem */
+    .ecosystem-flow-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+
+    .eco-tier-card {
+      background: var(--bg-primary);
+      border-radius: var(--radius-lg);
+      padding: 2.75rem 2.25rem;
+      border: 1px solid var(--border-light);
+    }
+
+    .eco-tier-num {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      color: var(--text-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .eco-tier-name {
+      font-size: 1.85rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .eco-tier-role {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--accent-terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+    }
+
+    /* Vision */
+    .vision-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.25rem;
+      margin-top: 3.5rem;
+    }
+
+    .vision-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-md);
+      padding: 2rem 1.35rem;
+      border: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .vision-num {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent-terracotta);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    /* Final CTA */
+    .cta-section {
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+      text-align: center;
+      padding: 8.5rem 0;
+      position: relative;
+    }
+
+    .cta-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .cta-headline {
+      font-size: clamp(2.6rem, 5vw, 4rem);
+      line-height: 1.12;
+      color: var(--text-on-dark);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-tagline {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-style: italic;
+      color: var(--accent-gold-soft);
+      margin-bottom: 2.75rem;
+    }
+
+    .waitlist-form {
+      display: flex;
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+      gap: 0.75rem;
+    }
+
+    .waitlist-input {
+      flex: 1;
+      padding: 0.95rem 1.4rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-dark);
+      background: var(--bg-dark-surface);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .waitlist-input:focus {
+      border-color: var(--accent-terracotta);
+    }
+
+    .cta-footer-line {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      letter-spacing: 0.2em;
+      color: var(--text-on-dark-muted);
+      text-transform: uppercase;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: #12100F;
+      color: var(--text-on-dark-muted);
+      padding: 4.5rem 0 2.5rem;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .footer-brand h3 {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      color: #FFFFFF;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col-title {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-links a {
+      color: var(--text-on-dark-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-terracotta-soft);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-dark);
+      font-size: 0.82rem;
+      color: #6E6862;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-box {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      max-width: 480px;
+      width: 90%;
+      text-align: center;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid, .problem-grid, .product-duo-grid, .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .flow-steps, .timeline-wrap, .audience-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .scenarios-grid, .sisterhood-pillars-grid, .ecosystem-flow-grid {
+        grid-template-columns: 1fr;
+      }
+      .vision-grid, .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .flow-steps, .timeline-wrap, .audience-grid, .vision-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .waitlist-form {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo-wrap">
+        <span class="brand-title">GATE 27</span>
+        <span class="brand-subtitle">The Solo Sisterhood</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#problem" class="nav-link">The Problem</a></li>
+        <li><a href="#tulihood" class="nav-link">Tulihood System</a></li>
+        <li><a href="#scenarios" class="nav-link">Scenarios</a></li>
+        <li><a href="#community" class="nav-link">Sisterhood</a></li>
+        <li><a href="#story" class="nav-link">Founder Story</a></li>
+        <li><a href="#stage" class="nav-link">Stage & Roadmap</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#join" class="btn btn-primary btn-sm">Join the Journey</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="stage-badge">
+            <span class="stage-dot"></span>
+            <span>Early-Stage Concept & Prototype in Development</span>
+          </div>
+
+          <div class="hero-brand-mark">Gate 27 — The Solo Sisterhood</div>
+          
+          <h1 class="hero-title">
+            A connected travel experience designed for women who <em>go solo</em>.
+          </h1>
+
+          <p class="hero-description">
+            Explore independently. Stay connected when it matters. Gate 27 brings together thoughtful travel design, discreet safety technology, and a global sisterhood to make solo travel feel more confident, connected, and free.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#problem" class="btn btn-primary">Explore Gate 27</a>
+            <a href="#tulihood" class="btn btn-secondary">Discover Tulihood Tech</a>
+          </div>
+
+          <div class="hero-credo-banner">
+            Designed for her freedom, not her fear.
+          </div>
+        </div>
+
+        <div class="hero-visual-card">
+          <div class="hero-image-box">
+            <span class="hero-badge-tag">Solo Travel Reimagined</span>
+            <div class="hero-image-quote">
+              “Women are already independent. Travel products and safety infrastructure should catch up.”
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. THE PROBLEM -->
+  <section class="problem-section" id="problem">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-left">
+          <span class="eyebrow">The Hidden Friction</span>
+          <h2>Freedom shouldn’t come with a safety tradeoff.</h2>
+          
+          <p class="problem-intro">
+            For many women, traveling alone is one of the most powerful ways to experience independence, self-discovery, and the world on their own terms.
+          </p>
+          <p style="margin-bottom: 1.5rem;">
+            Yet solo travel also comes with a constant layer of invisible decision-making:
+          </p>
+
+          <ul class="invisible-decisions-list">
+            <li class="decision-item">
+              <span class="decision-num">01</span>
+              <span>Should I walk back alone?</span>
+            </li>
+            <li class="decision-item">
+              <span class="decision-num">02</span>
+              <span>Should I share my location?</span>
+            </li>
+            <li class="decision-item">
+              <span class="decision-num">03</span>
+              <span>Does someone know when I should arrive?</span>
+            </li>
+            <li class="decision-item">
+              <span class="decision-num">04</span>
+              <span>Is this route safe?</span>
+            </li>
+            <li class="decision-item">
+              <span class="decision-num">05</span>
+              <span>Am I overreacting, or should I ask for help?</span>
+            </li>
+            <li class="decision-item">
+              <span class="decision-num">06</span>
+              <span>What happens when I feel uncomfortable—but it is not yet an emergency?</span>
+            </li>
+          </ul>
+
+          <p>
+            Most safety tools are designed for the final moment: <strong>an emergency</strong>. Gate 27 is interested in everything that happens before that moment.
+          </p>
+        </div>
+
+        <div class="problem-right">
+          <div class="spectrum-card">
+            <span class="eyebrow">The Spectrum of Travel Situations</span>
+            <h3 class="spectrum-card-title">Designing Beyond the Binary</h3>
+            <p class="spectrum-explainer">
+              Click each stage to see how safety needs evolve from confidence to escalation:
+            </p>
+
+            <div class="spectrum-bar-wrap" id="spectrumBar">
+              <div class="spectrum-step" data-state="confident">
+                <span class="spectrum-label step-confident">Confident</span>
+                <span style="font-size: 0.8rem; color: var(--text-light);">Unrestricted exploration</span>
+              </div>
+              <div class="spectrum-step active" data-state="uncertain">
+                <div style="display: flex; align-items: center; gap: 0.6rem;">
+                  <span class="spectrum-label step-uncertain">Uncertain</span>
+                  <span class="spectrum-badge-focus">GATE 27 FOCUS</span>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--accent-terracotta);">Subtle check-ins</span>
+              </div>
+              <div class="spectrum-step active" data-state="uncomfortable">
+                <div style="display: flex; align-items: center; gap: 0.6rem;">
+                  <span class="spectrum-label step-uncomfortable">Uncomfortable</span>
+                  <span class="spectrum-badge-focus">GATE 27 FOCUS</span>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--accent-terracotta);">Live route share</span>
+              </div>
+              <div class="spectrum-step" data-state="threatened">
+                <span class="spectrum-label step-threatened">Threatened</span>
+                <span style="font-size: 0.8rem; color: var(--text-light);">Direct circle alert</span>
+              </div>
+              <div class="spectrum-step" data-state="emergency">
+                <span class="spectrum-label step-emergency">Emergency</span>
+                <span style="font-size: 0.8rem; color: var(--text-light);">Emergency dispatch</span>
+              </div>
+            </div>
+
+            <div class="spectrum-quote-box">
+              <p>“We are designing for the space between ‘I’m fine’ and ‘I need help.’”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 & 4. TULIHOOD SMART TRAVEL SYSTEMS -->
+  <section class="tulihood-section" id="tulihood">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow">Technology & Hardware Layer</span>
+        <h2>Meet Tulihood</h2>
+        <p>Safety, beauty, and technology woven into the journey.</p>
+        <div style="margin-top: 1.25rem;">
+          <p style="font-size: 1rem; color: var(--text-muted);">
+            Tulihood Smart Travel Systems is the product and technology layer powering Gate 27. Instead of asking women to carry another obvious safety device, Tulihood explores how safety can be embedded into something they already choose to carry.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-duo-grid">
+        <!-- Physical Companion -->
+        <div class="product-card">
+          <div>
+            <span class="product-badge">Physical Hardware Concept</span>
+            <span class="eyebrow">The Hardware</span>
+            <h3 class="product-card-title">The Companion Bag</h3>
+            <p class="product-card-desc">
+              The first concept is a connected travel companion combining a fashion-forward crossbody/travel bag with lightweight tactile safety interactions.
+            </p>
+
+            <ul class="feature-checklist">
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Discreet Tactile Safety Trigger:</strong> Quick, concealed tactile activation without looking at your screen.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Secure / Anti-Theft Storage:</strong> Concealed locking compartments protecting cards and passports.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Travel-Friendly Organization:</strong> Purpose-built compartments for currencies, passports, and tech essentials.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Phone-Connected Interaction:</strong> Low-power pairing with gentle haptic reassurance feedback.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Lightweight Everyday Design:</strong> Premium aesthetics suitable for museums, night transit, and dining.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Optional Future Tulipy Charm:</strong> Tactile charm interaction point for emotional identity.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-footer-note">
+            * Early-stage concept in prototype development. Not currently manufactured or commercially sold.
+          </div>
+        </div>
+
+        <!-- Digital Experience -->
+        <div class="product-card">
+          <div>
+            <span class="product-badge">Digital Software Concept</span>
+            <span class="eyebrow">The App Layer</span>
+            <h3 class="product-card-title">The Gate 27 App</h3>
+            <p class="product-card-desc">
+              A minimalist, highly focused mobile companion experience designed specifically for solo travelers' real-world safety flow.
+            </p>
+
+            <ul class="feature-checklist">
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Trusted Circle:</strong> Select and curate the specific people you trust before heading out.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Smart Check-In:</strong> Set an expected arrival window when embarking on new or late routes.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Location Sharing:</strong> Share your live location privately when needed with a single discreet action.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Safety Escalation:</strong> Quietly alert a trusted contact if your check-in window passes.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Travel Status:</strong> Let your circle know you arrived safely with one tap closing the loop.</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">✦</span>
+                <span><strong>Emergency Mode:</strong> Seamlessly escalate support when a situation becomes serious.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-footer-note">
+            * Focused MVP architecture: cleanly omitting clutter like social feeds, AI trip planning, or crypto.
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Interaction Flow -->
+      <div class="interaction-flow-card">
+        <span class="eyebrow">Core Interaction Philosophy</span>
+        <h3 style="font-size: 1.85rem; margin-bottom: 0.5rem; color: var(--text-main);">CARRY → CHECK IN → CONNECT → ESCALATE</h3>
+        <p style="font-size: 0.95rem; color: var(--text-muted);">How Tulihood technology integrates smoothly into everyday travel behavior.</p>
+
+        <div class="flow-steps">
+          <div class="flow-step-item">
+            <span class="flow-step-num">STEP 01</span>
+            <div class="flow-step-title">CARRY</div>
+            <div class="flow-step-desc">Carry a beautifully crafted everyday bag with invisible tactile safety controls.</div>
+          </div>
+          <div class="flow-step-item">
+            <span class="flow-step-num">STEP 02</span>
+            <div class="flow-step-title">CHECK IN</div>
+            <div class="flow-step-desc">Set an expected arrival time in unfamiliar transit spaces with one simple tap.</div>
+          </div>
+          <div class="flow-step-item">
+            <span class="flow-step-num">STEP 03</span>
+            <div class="flow-step-title">CONNECT</div>
+            <div class="flow-step-desc">Keep your Trusted Circle passively aware without intrusive alarms or spam.</div>
+          </div>
+          <div class="flow-step-item">
+            <span class="flow-step-num">STEP 04</span>
+            <div class="flow-step-title">ESCALATE</div>
+            <div class="flow-step-desc">Seamlessly elevate reassurance to emergency protocols if a situation worsens.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SCENARIOS -->
+  <section class="scenarios-section" id="scenarios">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow">Real-World Scenarios</span>
+        <h2>Before It Becomes an Emergency</h2>
+        <p>Why Gate 27 is built around nuanced support rather than just a basic panic button.</p>
+      </div>
+
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <div>
+            <div class="scenario-id">SCENARIO 01</div>
+            <h3 class="scenario-headline">Arriving somewhere unfamiliar</h3>
+            <div class="scenario-prompt">
+              “You land in a new city alone and expect to reach your accommodation by 10:30 PM.”
+            </div>
+            <div class="scenario-action-title">The Gate 27 Flow</div>
+            <ul class="scenario-action-list">
+              <li>Set an arrival check-in.</li>
+              <li>Your Trusted Circle knows your expected arrival.</li>
+              <li>When you arrive, one tap closes the loop.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <div>
+            <div class="scenario-id">SCENARIO 02</div>
+            <h3 class="scenario-headline">Something feels off</h3>
+            <div class="scenario-prompt">
+              “You are walking back at night and feel that someone may be following you, but you are not sure.”
+            </div>
+            <div class="scenario-action-title">The Gate 27 Flow</div>
+            <ul class="scenario-action-list">
+              <li>Use a discreet interaction on the bag.</li>
+              <li>Begin location sharing without visibly taking out your phone.</li>
+              <li>Connect to someone you trust.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <div>
+            <div class="scenario-id">SCENARIO 03</div>
+            <h3 class="scenario-headline">A situation escalates</h3>
+            <div class="scenario-prompt">
+              “You determine that you need immediate help.”
+            </div>
+            <div class="scenario-action-title">The Gate 27 Flow</div>
+            <ul class="scenario-action-list">
+              <li>Escalate from reassurance to an emergency action.</li>
+              <li>Directly dispatch emergency details and live location.</li>
+              <li>Mobilize your Trusted Circle immediately.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="scenarios-philosophy-banner">
+        <p>“Safety is rarely binary. Our design shouldn’t be either.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHY EXISTING SOLUTIONS FEEL FRAGMENTED -->
+  <section class="comparison-section" id="comparison">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow">Market Opportunity</span>
+        <h2>Why Existing Solutions Feel Fragmented</h2>
+        <p>“We see an opportunity in connecting experiences that are currently fragmented.”</p>
+      </div>
+
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Solution Category</th>
+              <th>Good At</th>
+              <th>Missing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Community Apps</strong></td>
+              <td><span class="tag-good">Connection, recommendations, meeting travelers</span></td>
+              <td><span class="tag-missing">Physical safety interaction</span></td>
+            </tr>
+            <tr>
+              <td><strong>Personal Safety Devices</strong></td>
+              <td><span class="tag-good">Emergency response</span></td>
+              <td><span class="tag-missing">Travel lifestyle, identity, everyday use</span></td>
+            </tr>
+            <tr>
+              <td><strong>Anti-Theft Bags</strong></td>
+              <td><span class="tag-good">Protecting belongings</span></td>
+              <td><span class="tag-missing">Personal connection and escalation</span></td>
+            </tr>
+            <tr>
+              <td><strong>Location-Sharing Apps</strong></td>
+              <td><span class="tag-good">Tracking</span></td>
+              <td><span class="tag-missing">A travel-specific physical experience</span></td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>GATE 27</strong></td>
+              <td colspan="2">
+                <span class="tag-gate27">Unified Ecosystem</span> &nbsp;
+                <strong>Travel Lifestyle + Physical Product + Digital Connection + Safety Journey + Community</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. THE SOLO SISTERHOOD -->
+  <section class="sisterhood-section" id="community">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow">The Community Layer</span>
+        <h2>Solo doesn’t have to mean unsupported.</h2>
+        <p>
+          Gate 27 imagines a global network of women who share knowledge, confidence, cultural curiosity, and lived travel experience.
+        </p>
+      </div>
+
+      <div class="sisterhood-pillars-grid">
+        <div class="pillar-card">
+          <span style="font-size: 1.6rem; margin-bottom: 1rem; display: inline-block;">📖</span>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--text-main);">Solo Travel Stories & Safety Insights</h3>
+          <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.7;">
+            Peer-shared city safety insights, neighborhood guidance, and authentic travel reflections from women who have navigated those paths.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span style="font-size: 1.6rem; margin-bottom: 1rem; display: inline-block;">🎓</span>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--text-main);">First-Time Solo Travel Education</h3>
+          <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.7;">
+            Travel workshops, packing frameworks, and safety preparedness tools designed to turn first-time apprehension into calm independence.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span style="font-size: 1.6rem; margin-bottom: 1rem; display: inline-block;">🌍</span>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--text-main);">Future Community Experiences</h3>
+          <p style="font-size: 0.98rem; color: var(--text-muted); line-height: 1.7;">
+            Gate 27 envisions exploring local gatherings, women-to-women cultural recommendations, airport pop-ups, and future travel collaborations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FOUNDER STORY -->
+  <section class="founder-section" id="story">
+    <div class="container">
+      <div class="founder-grid">
+        <div class="founder-visual">
+          <div class="founder-visual-quote">
+            “Traveling alone can make you feel incredibly free—and incredibly aware that you are alone.”
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.16em; color: var(--text-on-dark-muted); text-transform: uppercase;">
+            Doha Night Tour → Gate 27 Departure
+          </div>
+        </div>
+
+        <div class="founder-content">
+          <span class="eyebrow eyebrow-dark">The Founder Story</span>
+          <h2 style="font-size: clamp(2.4rem, 4vw, 3.5rem); margin-bottom: 1.5rem;">It started at a gate.</h2>
+
+          <div class="founder-story-body">
+            <p>Gate 27 grew from my own experience traveling alone.</p>
+            <p>During a night tour in Doha, I met another young woman who was also traveling solo. We came from different places and had never met before, yet during those few hours we became each other’s familiarity, confidence, and sense of connection in an unfamiliar city.</p>
+            <p>When we left Doha through different airport gates, I kept thinking about the contradiction at the center of solo travel: <span class="highlight-text">Traveling alone can make you feel incredibly free—and incredibly aware that you are alone.</span></p>
+            <p>The first version of the idea was a soft travel companion, Tulipy, designed around emotional reassurance. As the concept evolved, I began asking a deeper question: <span class="highlight-text">Could emotional reassurance and functional safety exist in the same everyday object?</span></p>
+            <p>That question became Gate 27 and Tulihood Smart Travel Systems. What began as a companion is becoming a system for confidence, connection, and freedom of movement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. BREAKING INVISIBLE BOUNDARIES -->
+  <section class="manifesto-section" id="manifesto">
+    <div class="container">
+      <div class="manifesto-box">
+        <span class="eyebrow">Our Philosophy</span>
+        <h2 class="manifesto-headline">Breaking invisible boundaries.</h2>
+        
+        <p class="manifesto-body">
+          For women, freedom of movement is not always experienced equally. The boundaries are rarely physical.<br><br>
+          Sometimes they are: the street you avoid, the train you do not take, the hour you decide is too late, the destination you reconsider, or the message you send to someone just to say, “I made it back.”<br><br>
+          Gate 27 is not about telling women where they should or should not go. It is about designing better support for the women who choose to go anyway.
+        </p>
+
+        <div class="manifesto-big-statement">
+          “Safety should expand freedom. Not define its limits.”
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. WHO WE ARE DESIGNING FOR -->
+  <section style="background-color: var(--bg-surface); border-top: 1px solid var(--border-light);" id="audience">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow">Target Travelers</span>
+        <h2>Built first for women who go solo.</h2>
+        <p>We are deliberately starting with a focused audience rather than designing generically for “everyone.”</p>
+      </div>
+
+      <div class="audience-grid">
+        <div class="audience-card">
+          <span style="font-size: 1.85rem; margin-bottom: 1rem; display: inline-block;">🎓</span>
+          <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);">Students & Study Abroad</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">International students exploring foreign cities, weekend trips, and independent study abroad.</p>
+        </div>
+
+        <div class="audience-card">
+          <span style="font-size: 1.85rem; margin-bottom: 1rem; display: inline-block;">💼</span>
+          <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);">Young Professionals</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Women ages roughly 18–35 balancing business travel, conferences, and spontaneous solo extensions.</p>
+        </div>
+
+        <div class="audience-card">
+          <span style="font-size: 1.85rem; margin-bottom: 1rem; display: inline-block;">✈️</span>
+          <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);">First-Time Solo Travelers</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Women taking their inaugural trip alone who want thoughtful reassurance and practical confidence.</p>
+        </div>
+
+        <div class="audience-card">
+          <span style="font-size: 1.85rem; margin-bottom: 1rem; display: inline-block;">🗺️</span>
+          <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);">Frequent Adventurers</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Independent travelers who need sleek, discreet safety infrastructure that matches their lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. CURRENT STAGE -->
+  <section class="stage-section" id="stage">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow">Development Transparency</span>
+        <h2>From concept to validated experience.</h2>
+        <p>Current Stage: <strong>EARLY-STAGE / PRE-LAUNCH</strong></p>
+      </div>
+
+      <div class="timeline-wrap">
+        <div class="timeline-card">
+          <div class="timeline-month">AUGUST</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.85rem; color: var(--text-main);">Problem Definition + Concept</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Initial brand concept, competitive research, persona formulation, and safety interaction architecture.</p>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-month">SEPTEMBER</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.85rem; color: var(--text-main);">User Research + MVP Prototype</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Solo traveler interviews, identifying priority safety behaviors, and companion bag interaction prototypes.</p>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-month">OCTOBER</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.85rem; color: var(--text-main);">Scenario Testing + Iteration</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Clickable mobile prototype testing, physical bag ergonomics, and willingness-to-carry validation.</p>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-month">NOVEMBER</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.85rem; color: var(--text-main);">Validated Pre-Launch Prototype</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Pre-launch prototype refinement, MVP finalization, and community waitlist rollout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. BRAND ECOSYSTEM -->
+  <section style="background-color: var(--bg-surface);" id="ecosystem">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow">Brand Architecture</span>
+        <h2>The Ecosystem</h2>
+        <p>A clear hierarchy combining movement, technology, and emotional identity.</p>
+      </div>
+
+      <div class="ecosystem-flow-grid">
+        <div class="eco-tier-card">
+          <div class="eco-tier-num">TIER 01</div>
+          <h3 class="eco-tier-name">GATE 27</h3>
+          <div class="eco-tier-role">The Brand / Community / Movement</div>
+          <p class="eco-tier-desc">Gate 27 creates the world: cultivating sisterhood, shared knowledge, and confidence in solo exploration.</p>
+        </div>
+
+        <div class="eco-tier-card">
+          <div class="eco-tier-num">TIER 02</div>
+          <h3 class="eco-tier-name">TULIHOOD</h3>
+          <div class="eco-tier-role">Smart Travel Systems & Technology</div>
+          <p class="eco-tier-desc">Tulihood powers the experience: the discreet hardware triggers, companion bag design, and connected app.</p>
+        </div>
+
+        <div class="eco-tier-card">
+          <div class="eco-tier-num">TIER 03</div>
+          <h3 class="eco-tier-name">TULIPY</h3>
+          <div class="eco-tier-role">Optional Companion / Tactile IP</div>
+          <p class="eco-tier-desc">Tulipy brings emotional identity to the journey: an optional tactile charm and friendly companion layer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FUTURE VISION -->
+  <section style="background-color: var(--bg-primary);" id="vision">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow">Long-Term Roadmap</span>
+        <h2>More than a bag.</h2>
+        <p>A future ecosystem designed to support independent women at every stage of their travels.</p>
+      </div>
+
+      <div class="vision-grid">
+        <div class="vision-card">
+          <div class="vision-num">01</div>
+          <h3 class="vision-card-title">Connected Products</h3>
+          <p class="vision-card-desc">Bags, accessories, and wearable tactile interactions.</p>
+        </div>
+
+        <div class="vision-card">
+          <div class="vision-num">02</div>
+          <h3 class="vision-card-title">Digital Safety</h3>
+          <p class="vision-card-desc">Check-ins, trusted circles, and tiered escalation.</p>
+        </div>
+
+        <div class="vision-card">
+          <div class="vision-num">03</div>
+          <h3 class="vision-card-title">Solo Sisterhood</h3>
+          <p class="vision-card-desc">Education, verified stories, and local city knowledge.</p>
+        </div>
+
+        <div class="vision-card">
+          <div class="vision-num">04</div>
+          <h3 class="vision-card-title">Travel Partnerships</h3>
+          <p class="vision-card-desc">Future explorations with hospitality and cultural spaces.</p>
+        </div>
+
+        <div class="vision-card">
+          <div class="vision-num">05</div>
+          <h3 class="vision-card-title">Global Experiences</h3>
+          <p class="vision-card-desc">Airport activations, city pop-ups, and gatherings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. FINAL CTA -->
+  <section class="cta-section" id="join">
+    <div class="container cta-container">
+      <h2 class="cta-headline">
+        Where will you go when feeling safe no longer defines where you can?
+      </h2>
+      <div class="cta-tagline">
+        Your journey. Your pace. Your Gate.
+      </div>
+
+      <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+        <input type="email" class="waitlist-input" placeholder="Enter your email address..." required id="emailInput" />
+        <button type="submit" class="btn btn-primary">Join the Journey</button>
+      </form>
+
+      <div class="cta-footer-line">
+        Go solo. Stay connected. · Designed for her freedom, not her fear.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>GATE 27</h3>
+          <p style="font-size: 0.9rem; color: #9E958C; max-width: 320px;">
+            A solo travel community for women. Combining thoughtful travel design, discreet technology, and global connection.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Architecture</div>
+          <ul class="footer-links">
+            <li><a href="#hero">Gate 27 Brand</a></li>
+            <li><a href="#tulihood">Tulihood Tech</a></li>
+            <li><a href="#ecosystem">Tulipy Charm IP</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">System & Product</div>
+          <ul class="footer-links">
+            <li><a href="#problem">The Problem</a></li>
+            <li><a href="#tulihood">The Companion Bag</a></li>
+            <li><a href="#scenarios">Scenarios</a></li>
+            <li><a href="#stage">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Sisterhood</div>
+          <ul class="footer-links">
+            <li><a href="#community">Community Vision</a></li>
+            <li><a href="#story">Founder Story</a></li>
+            <li><a href="#manifesto">Manifesto</a></li>
+            <li><a href="#join">Join Waitlist</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 GATE 27 & TULIHOOD SMART TRAVEL SYSTEMS. All rights reserved.</div>
+        <div>Early-Stage Research & Concept Phase.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Confirmation -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div style="font-size: 2.5rem; margin-bottom: 1rem;">✈️</div>
+      <h3 style="font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--text-main);">Welcome to the Journey</h3>
+      <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+        You're on the early access list for Gate 27 and Tulihood Smart Travel Systems updates.
+      </p>
+      <button class="btn btn-primary" onclick="closeModal()">Explore the Site</button>
+    </div>
+  </div>
+
+  <script>
+    function handleWaitlist(e) {
+      e.preventDefault();
+      const email = document.getElementById('emailInput').value;
+      if(email) {
+        document.getElementById('successModal').classList.add('active');
+        document.getElementById('emailInput').value = '';
+      }
+    }
+
+    function closeModal() {
+      document.getElementById('successModal').classList.remove('active');
+    }
+
+    const steps = document.querySelectorAll('.spectrum-step');
+    steps.forEach(step => {
+      step.addEventListener('click', () => {
+        steps.forEach(s => s.classList.remove('active'));
+        step.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
